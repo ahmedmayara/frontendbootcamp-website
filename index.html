@@ -57,7 +57,7 @@
                         their first project.
                     </p>
 
-                    <button class="btn btn-primary btn-lg" data-bs-target="#enroll" data-bs-toggle="modal">Enroll Now</button>
+                    <button class="btn btn-primary btn-lg" data-bs-target="#enroll" data-bs-toggle="modal" id="enrl-btn">Enroll Now</button>
                 </div>
 
                 <img class="img-fluid w-50 d-none d-sm-block" src="img\showcase.svg">
@@ -476,77 +476,6 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Enrollement Modal</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <b class="lead text-center">Fill Out This Form And We Will Come Back To You</b>
-
-          <form name="enroll" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-            <input type="hidden" name="form-name" value="enroll">
-                <p class="hidden">
-                    <label>
-                        Don’t fill this out if you’re human: <input name="bot-field" />
-                    </label>
-                </p>
-              <div class="mb-3">
-                  <label for="first-name" class="col-form-label">
-                      First Name :
-                  </label>
-
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">First Name</span>
-                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">
-                    Last Name :
-                </label>
-
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">Last Name</span>
-                  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="col-form-label" id="email">
-                        E-mail Address :
-                    </label>
-  
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1">Email</span>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="phone" class="col-form-label">
-                        Phone Number :
-                    </label>
-  
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1">Phone</span>
-                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary" onsubmit="SendEmail()">Submit</button>
-        </div>
-      </div>
-    </div>
-    </div>
-
     <!--Newsletter-Toast-->
 
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
@@ -579,6 +508,79 @@
         </div>
     </div>
 
+    <!--Modal-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enrollement Modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b class="lead text-center">Fill Out This Form And We Will Come Back To You</b>
+    
+              <form name="enroll" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="form-name" value="enroll">
+                    <p class="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </p>
+                  <div class="mb-3">
+                      <label for="first-name" class="col-form-label">
+                          First Name :
+                      </label>
+    
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">First Name</span>
+                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+    
+                  <div class="mb-3">
+                    <label for="last-name" class="col-form-label">
+                        Last Name :
+                    </label>
+    
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">Last Name</span>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label" id="email">
+                            E-mail Address :
+                        </label>
+      
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">Email</span>
+                          <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">
+                            Phone Number :
+                        </label>
+      
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">Phone</span>
+                          <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="thank-you.html"><button type="submit" class="btn btn-primary">Submit</button></a>
+            </div>
+          </div>
+        </div>
+        </div>
+
 <script src="bootstrapQuery.js"></script>  
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -593,6 +595,14 @@
             toast.show()
         })
     }
+
+    document.getElementById('enrl-btn').addEventListener ('click', function() {
+        document.querySelector ('.popup').style.display = "flex";
+    })
+
+    document.getElementById ('cls-btn').addEventListener ('click', function() {
+        document.querySelector ('.popup').style.display = "none";
+    })
 </script>
 
 </body>

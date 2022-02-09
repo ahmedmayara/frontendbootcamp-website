@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Domaine';
+    src: url('Domaine.ttf');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    font-family: 'Domaine';
+}
+
+.thank-you-popup
+{
+    background-color: #d6d6d6;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #d6d6d6;
+}
+
+.content h2, p, a, i
+{
+    background-color: #d6d6d6;
+}
+
+.item
+{
+    margin: 5px;
+    background-color: #d6d6d6;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@media (max-width: 430px)
+{
+    .thank-you-popup
+    {
+        width: 250px;
+        height: 250px;
+        padding-top: 55px;
+    }
+}
